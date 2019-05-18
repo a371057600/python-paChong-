@@ -14,3 +14,5 @@ ITEM_PIPELINES = {
    'jianshu_spider.pipelines.JianshuTwistedPipeline': 300,
 }
 把原本的JianshuSpiderPipeline慢速爬虫，替换成了JianshuTwistedPipeline的异步爬虫
+
+# 5月18日更新了把所有的字段都爬到了数据库,数据库的字节最好都用varchar不然,爬阅读数,点赞数的时候你会爆炸的,亲测,只要替换网址就能用到很多网站.
